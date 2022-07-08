@@ -1,0 +1,228 @@
+@import '../../_index.scss';
+
+/**
+ *  Test variables
+ **/
+$font-family-base: 'Open Sans';
+$margin: 1rem;
+$padding: $margin;
+$size: 10px;
+$width: $size;
+$height: $size;
+$color: #fc0;
+$lines-to-show: 30;
+
+.any-button {
+    @include any-button;
+}
+
+.block-center {
+    @include block-center;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.ellipsis {
+    @include ellipsis;
+}
+
+.ellipsis-multiline {
+    @include ellipsis-multiline(20px, 1.4, 3);
+    @include ellipsis-multiline;
+}
+
+.ellipsis-multiline-simple {
+    @include ellipsis-multiline-simple($height, $lines-to-show);
+}
+
+.fit-image {
+    @include fit-image;
+    @include fit-image(20px);
+}
+
+/* Single property */
+.fluid-type {
+    @include fluid-type(font-size, 320px, 1366px, 14px, 18px);
+}
+
+/* Multiple properties with same values */
+.fluid-type-multi {
+    @include fluid-type(padding-bottom padding-top, 20em, 70em, 2em, 4em);
+}
+
+.if-childrens {
+    @include if-childrens(4, li);
+}
+
+.placeholder {
+    @include placeholder;
+}
+
+.before-block {
+    @include before-block;
+}
+
+.before-inline {
+    @include before-inline;
+}
+
+.before-absolute {
+    @include before-absolute;
+}
+
+.bs-gutter {
+    @include bs-gutter(21px);
+}
+
+.after-block {
+    @include after-block;
+}
+
+.after-inline {
+    @include after-inline;
+}
+
+.after-absolute {
+    @include after-absolute;
+}
+
+.inline-list {
+    @include inline-list;
+}
+
+.link-text {
+    @include link-text;
+}
+
+.reset-list {
+    @include reset-list;
+}
+
+.reset-link {
+    @include reset-link;
+}
+
+.reset-text {
+    @include reset-text;
+}
+
+.row {
+    @include row;
+    @include row(10px);
+}
+
+.row-inline {
+    @include row-inline;
+}
+
+.size {
+    @include size(20px, 30px);
+    @include size(20px);
+}
+
+.margin-h {
+    @include margin-h($margin);
+    @include margin-h($margin, $margin + 1rem);
+}
+
+.margin-v {
+    @include margin-v($margin);
+    @include margin-v($margin, $margin + 1rem);
+}
+
+.padding-h {
+    @include padding-h($padding);
+    @include padding-h($padding, $padding + 1rem);
+}
+
+.padding-v {
+    @include padding-v($padding);
+    @include padding-v($padding, $padding + 1rem);
+}
+
+.size {
+    @include size($width, $height);
+}
+
+.square {
+    @include square(0);
+}
+
+.sr-only {
+    @include sr-only;
+}
+
+.take-space {
+    @include take-space;
+    @include take-space(20px);
+}
+
+.text-hide {
+    @include text-hide;
+}
+
+.triangle-top {
+    @include triangle-top($width, $height, $color);
+}
+
+.triangle-bottom {
+    @include triangle-bottom($width, $height, $color);
+}
+
+.triangle-left {
+    @include triangle-left($width, $height, $color);
+}
+
+.triangle-right {
+    @include triangle-right($width, $height, $color);
+}
+
+.triangle-top-left {
+    @include triangle-top-left($size, $color);
+}
+
+.triangle-top-right {
+    @include triangle-top-right($size, $color);
+}
+
+.triangle-bottom-left {
+    @include triangle-bottom-left($size, $color);
+}
+
+.triangle-bottom-right {
+    @include triangle-bottom-right($size, $color);
+}
+
+.arrow-top {
+    @include arrow-top($size, $width, $color);
+}
+
+.arrow-bottom {
+    @include arrow-bottom($size, $width, $color);
+}
+
+.arrow-left {
+    @include arrow-left($size, $width, $color);
+}
+
+.arrow-right {
+    @include arrow-right($size, $width, $color);
+}
+
+.arrow-top-left {
+    @include arrow-top-left($size, $width, $color);
+}
+
+.arrow-top-right {
+    @include arrow-top-right($size, $width, $color);
+}
+
+.arrow-bottom-left {
+    @include arrow-bottom-left($size, $width, $color);
+}
+
+.arrow-bottom-right {
+    @include arrow-bottom-right($size, $width, $color);
+}
