@@ -1,7 +1,14 @@
 import "../styles/style.scss";
+import Layout from "../components/templates/layout";
 
-function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />;
+//------------------------------------------------------------------------------
+//-- APP --
+//------------------------------------------------------------------------------
+
+export default function MyApp({ Component, pageProps }) {
+    return (
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
+    );
 }
-
-export default MyApp;
