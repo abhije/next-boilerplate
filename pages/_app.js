@@ -1,5 +1,6 @@
 import "../styles/style.scss";
 import Layout from "../components/templates/layout";
+import { SSRProvider } from "react-bootstrap";
 
 //------------------------------------------------------------------------------
 //-- APP --
@@ -7,8 +8,10 @@ import Layout from "../components/templates/layout";
 
 export default function MyApp({ Component, pageProps }) {
     return (
-        <Layout>
-            <Component {...pageProps} />
-        </Layout>
+        <SSRProvider>
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
+        </SSRProvider>
     );
 }

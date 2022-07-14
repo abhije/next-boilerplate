@@ -1,8 +1,9 @@
+import { Container } from "react-bootstrap";
 
 export default function Home() {
     return (
-        <div className="o-container">
+        <Container>
             <h1>Hola!</h1>
-        </div>
+        </Container>
     );
 }

@@ -1,28 +1,33 @@
-@import "01_settings/ratios";
+@import "../node_modules/bootstrap/scss/functions";
 @import "01_settings/variables";
+@import "../node_modules/bootstrap/scss/variables";
 @import "02_tools/rupture";
+@import "../node_modules/bootstrap/scss/mixins";
 @import "02_tools/mixins/index";
 @import "02_tools/modularscale/modularscale";
 @import "02_tools/flexbox-grid-mixins";
+@import "../node_modules/bootstrap/scss/utilities";
 
 /* -----------------------------------------------------------------------------
 03. Generic
 ----------------------------------------------------------------------------- */
 
-@import "03_generic/remix/remix";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
 
 /* -----------------------------------------------------------------------------
 04. Elements
 ----------------------------------------------------------------------------- */
 
-@import "04_elements/html";
-@import "04_elements/headings";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
 
 /* -----------------------------------------------------------------------------
 05. Objects
 ----------------------------------------------------------------------------- */
 
-@import "05_objects/container";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
 
 /* -----------------------------------------------------------------------------
 06. Components
@@ -32,4 +37,4 @@
 07-trumps
 ----------------------------------------------------------------------------- */
 
-
+@import "../node_modules/bootstrap/scss/helpers";
